@@ -1,0 +1,42 @@
+[2026-03-26 23:15:11] TAG:help SCORE:1.0
+  USER : help
+  BOT  : I can help you with:
+  - Fees & Payments
+  - Exam Dates & Results
+  - Library & ...
+
+[2026-03-26 23:15:27] TAG:holidays SCORE:0.8
+  USER : when is the holiday?
+  BOT  : Major holidays: Diwali (1-5 Nov), Christmas (25 Dec), Republic Day (26 Jan), Hol...
+
+[2026-03-26 23:15:49] TAG:fees SCORE:0.79
+  USER : what is the attendance requirement?
+  BOT  : Annual tuition fee: Rs.45,000 | Semester fee: Rs.22,500 | Lab fee: Rs.5,000/year...
+
+[2026-03-26 23:23:50] TAG:help SCORE:1.0
+  USER : help
+  BOT  : I can help you with:
+  - Fees & Payments
+  - Exam Dates & Results
+  - Library & ...
+
+[2026-03-26 23:24:04] TAG:fees SCORE:0.53
+  USER : what are the fees and payments?
+  BOT  : Annual tuition fee: Rs.45,000 | Semester fee: Rs.22,500 | Lab fee: Rs.5,000/year...
+
+[2026-03-26 23:24:24] TAG:holidays SCORE:0.81
+  USER : when is the holiday?
+  BOT  : Major holidays: Diwali (1-5 Nov), Christmas (25 Dec), Republic Day (26 Jan), Hol...
+
+[2026-03-26 23:24:39] TAG:fees SCORE:0.72
+  USER : what is the college timing?
+  BOT  : Annual tuition fee: Rs.45,000 | Semester fee: Rs.22,500 | Lab fee: Rs.5,000/year...
+
+[2026-03-26 23:26:24] TAG:college_timing SCORE:0.67
+  USER : what is teh college timing?
+  BOT  : College operates from Monday to Saturday, 8:30 AM to 6:00 PM. Administrative off...
+
+[2026-03-27 11:24:07] TAG:greeting SCORE:1.00
+USER: hello
+BOT:  Hello! Welcome to the University Assistant Bot. How can I help you today?...
+

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ABC College Chatbot – Your University Assistant</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div id="app">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <div class="logo-container">
+                    <i data-lucide="graduation-cap" size="32"></i>
+                </div>
+                <h2>ABC College Chatbot</h2>
+                <p>Your University Assistant</p>
+            </div>
+            
+            <nav class="sidebar-nav">
+                <a href="#" class="nav-item active">
+                    <i data-lucide="message-square"></i>
+                    <span>Chat</span>
+                </a>
+                <a href="#" class="nav-item">
+                    <i data-lucide="link"></i>
+                    <span>Quick Links</span>
+                </a>
+                <a href="#" class="nav-item">
+                    <i data-lucide="dollar-sign"></i>
+                    <span>Fees Structure</span>
+                </a>
+                <a href="#" class="nav-item">
+                    <i data-lucide="home"></i>
+                    <span>Hostel Information</span>
+                </a>
+                <a href="#" class="nav-item">
+                    <i data-lucide="phone"></i>
+                    <span>Contact Support</span>
+                </a>
+                <a href="#" class="nav-item">
+                    <i data-lucide="help-circle"></i>
+                    <span>FAQ</span>
+                </a>
+            </nav>
+
+            <div class="sidebar-footer">
+                <div class="help-card">
+                    <div class="help-card-header">
+                        <div class="help-icon">
+                            <i data-lucide="headset" size="18"></i>
+                        </div>
+                        <h4>Need help?</h4>
+                    </div>
+                    <p>We're here to assist you with any queries.</p>
+                    <a href="#" class="help-link">
+                        Contact Support <i data-lucide="arrow-right" size="14"></i>
+                    </a>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Main Chat Area -->
+        <main class="chat-container">
+            <header class="chat-header">
+                <div class="bot-info">
+                    <div class="bot-avatar">
+                        <i data-lucide="bot"></i>
+                        <span class="bot-status-dot"></span>
+                    </div>
+                    <div class="bot-details">
+                        <h3>ABC College Chatbot</h3>
+                        <p>Online</p>
+                    </div>
+                </div>
+                <div class="header-actions">
+                    <button class="action-btn" title="Refresh chat" onclick="clearChat()">
+                        <i data-lucide="rotate-cw" size="18"></i>
+                    </button>
+                    <button class="action-btn" title="More options">
+                        <i data-lucide="more-vertical" size="18"></i>
+                    </button>
+                </div>
+            </header>
+
+            <div class="chat-messages" id="chat-messages">
+                <!-- Initial Bot Message -->
+                <div class="message-group bot-group">
+                    <div class="message-row bot-row">
+                        <div class="msg-avatar">
+                            <i data-lucide="bot" size="18"></i>
+                        </div>
+                        <div class="bubble bot-bubble">
+                            Hi! Try "mess menu", "hostel fees", "fee structure" 👋
+                        </div>
+                    </div>
+                    <div class="msg-meta">10:30 AM</div>
+                </div>
+            </div>
+
+            <footer class="chat-input-area">
+                <div class="input-wrapper">
+                    <input type="text" id="msg-input" placeholder="Type your message..." autocomplete="off">
+                    <div class="input-actions">
+                        <button class="icon-btn" title="Attach file">
+                            <i data-lucide="paperclip" size="20"></i>
+                        </button>
+                        <button class="send-btn" id="send-btn">
+                            <i data-lucide="send" size="18"></i>
+                            <span>Send</span>
+                        </button>
+                    </div>
+                </div>
+                <p class="input-tip">Tip: Try asking about fees, hostel, mess menu, or any college information.</p>
+            </footer>
+        </main>
+    </div>
+
+    <script src="{{ url_for('static', filename='chat.js') }}"></script>
+</body>
+</html>
